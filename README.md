@@ -1,4 +1,4 @@
-# ML-LLaMA: Multi-language LLaMA
+# ML-LLaMA: Multi-Language LLaMA
 ## Make LLaMa understand Chinese 
 
 1. fine-tuning llama script
