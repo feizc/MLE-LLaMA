@@ -8,6 +8,8 @@
 
 
 ## Reference 
-[1] https://github.com/facebookresearch/llama
-[2] https://github.com/tatsu-lab/stanford_alpaca
+[1] https://github.com/facebookresearch/llama 
+
+[2] https://github.com/tatsu-lab/stanford_alpaca 
+
 [3] https://github.com/huggingface/transformers/tree/main/examples/pytorch/language-modeling
