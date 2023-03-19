@@ -1,8 +1,8 @@
-from llama import LLaMATokenizer, LLaMAConfig, LLaMAForCausalLM
+from llama import LlamaTokenizer, LlamaForCausalLM
 
 
 ckpt_path = './ckpt'
-tokenizer = LLaMATokenizer.from_pretrained(ckpt_path)
+tokenizer = LlamaTokenizer.from_pretrained(ckpt_path)
 # model = LLaMAForCausalLM.from_pretrained(ckpt_path) 
 
 
