@@ -19,3 +19,5 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
 [2] https://github.com/tatsu-lab/stanford_alpaca 
 
 [3] https://github.com/huggingface/transformers/tree/main/examples/pytorch/language-modeling
+
+[4] https://github.com/tloen/alpaca-lora
