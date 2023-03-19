@@ -9,7 +9,7 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
   
   (2) lora fine-tuning using [pert](https://github.com/huggingface/peft).
   
-- [ ] Fine-grained english-chinese dataset
+- [ ] Fine-grained english-chinese dataset. We are collecting alignment dataset.
 - [ ] Instructing tuning
 
 
