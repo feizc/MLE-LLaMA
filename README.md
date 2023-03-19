@@ -1,5 +1,6 @@
 # ML-LLaMA: Multi-Language LLaMA
-## Make LLaMa understand Chinese 
+
+This project aims to make LLaMa understand Chinese, and can generate fluency chinese. 
 
 - [X] Token vocabulary support for multi-language. We found that llama tokenizer naturally support for Chinese. 
 - [ ] Fine-tuning llama script. Current script must be run on 80G A100 and more techniques should be employed. 
