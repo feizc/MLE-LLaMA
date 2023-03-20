@@ -44,56 +44,7 @@ config = LoraConfig(
 model = get_peft_model(model, config)
 tokenizer.pad_token_id = 0 
 
-
-'''
-data = load_dataset("json", data_files=DATA_PATH)
-
-train_val = data["train"].train_test_split(
-    test_size=VAL_SET_SIZE, shuffle=True, seed=42
-)
-train_data = train_val["train"]
-val_data = train_val["test"]
-
-
-def generate_prompt(data_point):
-    # sorry about the formatting disaster gotta move fast
-    if data_point["input"]:
-        return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
-
-### Instruction:
-{data_point["instruction"]}
-### Input:
-{data_point["input"]}
-### Response:
-{data_point["output"]}"""
-    else:
-        return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-{data_point["instruction"]}
-### Response:
-{data_point["output"]}"""
-
-def tokenize(prompt):
-    # there's probably a way to do this with the tokenizer settings
-    # but again, gotta move fast
-    result = tokenizer(
-        prompt,
-        truncation=True,
-        max_length=CUTOFF_LEN + 1,
-        padding="max_length",
-    )
-    return {
-        "input_ids": result["input_ids"][:-1],
-        "attention_mask": result["attention_mask"][:-1],
-    }
-
-
-train_data = train_data.shuffle().map(lambda x: tokenize(generate_prompt(x)))
-val_data = val_data.shuffle().map(lambda x: tokenize(generate_prompt(x)))
-'''
 train_data = TextDataSet(DATA_PATH, tokenizer=tokenizer)
-
-
 
 trainer = transformers.Trainer(
     model=model,
