@@ -17,8 +17,8 @@ class TextDataSet(Dataset):
         result = self.tokenizer(texts, 
                                     truncation=True,
                                     max_length=CUTOFF_LEN + 1,
-                                    padding="max_length", 
-                                    return_tensors="pt",)
+                                    padding="max_length", )
+                                    # return_tensors="pt",)
         return {
                 "input_ids": result["input_ids"][:-1],
                 "attention_mask": result["attention_mask"][:-1],
