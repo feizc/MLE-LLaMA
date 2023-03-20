@@ -1,6 +1,6 @@
 # MLE-LLaMA: Multi-Language Enhanced LLaMA
 
-This project aims to make LLaMa understand Chinese, and can generate fluency chinese. 
+This project aims to make LLaMa understand Chinese, and can generate fluency chinese. We are inspired that LLaMa have learned good English expression and a little alignment prompt can makes it capture Chinese. 
 
 - [X] Token vocabulary support for multi-language. We found that llama tokenizer naturally support for Chinese. 
 - [X] Fine-tuning llama script.  
@@ -19,7 +19,8 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
   
   
 - [ ] Fine-grained english-chinese dataset. We are collecting alignment dataset.
-- [ ] Instructing tuning
+- [ ] Instructing tuning. We use [chinese alpaca](https://github.com/carbonz0/alpaca-chinese-dataset) and [GuanacoDataset
+](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset) for instructing tunning. 
 - [ ] Checkpoints and cases
 
 
