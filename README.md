@@ -1,4 +1,4 @@
-# ML-LLaMA: Multi-Language LLaMA
+# MLE-LLaMA: Multi-Language Enhanced LLaMA
 
 This project aims to make LLaMa understand Chinese, and can generate fluency chinese. 
 
