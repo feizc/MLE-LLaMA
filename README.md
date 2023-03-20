@@ -11,7 +11,7 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
   
   | Argument | Values |
   |------|------|
-  | `batch size` | 128 |
+  | `batch size` | 128 * 8 |
    | `epochs` | 3 |
    | `cut length` | 256 |
    | `learning rate` | 2e-5 |
