@@ -1,5 +1,11 @@
 # MLE-LLaMA: Multi-Language Enhanced LLaMA
 
+<p align="center">
+     <img src="figures/logo.png" alt="logo" width = "600">
+     <br/>
+</p> 
+
+
 This project aims to make LLaMa understand Chinese, and can generate fluency chinese. We are inspired that LLaMa have learned good English expression and a little alignment prompt can makes it capture Chinese. 
 
 - [X] Token vocabulary support for multi-language. We found that llama tokenizer naturally support for Chinese. 
