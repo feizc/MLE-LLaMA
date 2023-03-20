@@ -20,7 +20,7 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
    | `epochs` | 3 |
    | `cut length` | 256 |
    | `learning rate` | 2e-5 |
-   | `speed` | 1.02s/it |
+   | `speed` | 1.02s / it |
   
   
 - [ ] Fine-grained english-chinese dataset. We are collecting alignment dataset.
