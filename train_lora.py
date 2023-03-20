@@ -9,7 +9,9 @@ from peft import (
     get_peft_model,
     get_peft_model_state_dict,
 )
-from datasets import load_dataset
+from utils import TextDataSet
+
+
 
 ckpt_path = './ckpt'
 tokenizer = LlamaTokenizer.from_pretrained(ckpt_path)
@@ -28,7 +30,7 @@ TARGET_MODULES = [
     "q_proj",
     "v_proj",
 ]
-DATA_PATH = "alpaca_data_cleaned.json"
+DATA_PATH = "./data/alpaca_data.json"
 model = prepare_model_for_int8_training(model)
 
 config = LoraConfig(
@@ -42,6 +44,8 @@ config = LoraConfig(
 model = get_peft_model(model, config)
 tokenizer.pad_token_id = 0 
 
+
+'''
 data = load_dataset("json", data_files=DATA_PATH)
 
 train_val = data["train"].train_test_split(
@@ -86,11 +90,15 @@ def tokenize(prompt):
 
 train_data = train_data.shuffle().map(lambda x: tokenize(generate_prompt(x)))
 val_data = val_data.shuffle().map(lambda x: tokenize(generate_prompt(x)))
+'''
+train_data = TextDataSet(DATA_PATH, tokenizer=tokenizer)
+
+
 
 trainer = transformers.Trainer(
     model=model,
     train_dataset=train_data,
-    eval_dataset=val_data,
+    # eval_dataset=None,
     args=transformers.TrainingArguments(
         per_device_train_batch_size=MICRO_BATCH_SIZE,
         gradient_accumulation_steps=GRADIENT_ACCUMULATION_STEPS,
@@ -119,5 +127,5 @@ model.state_dict = (
 
 trainer.train()
 
-model.save_pretrained("lora-alpaca")
+model.save_pretrained("lora")
 

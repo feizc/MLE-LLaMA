@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 import torch.utils.tensorboard as tensorboard
 from torch.cuda.amp import GradScaler
 
-from llama import LLaMATokenizer, LLaMAForCausalLM
+from llama import LlamaTokenizer, LlamaForCausalLM
 from utils import world_info_from_env, init_distributed_device, TextDataSet, is_master, get_autocast
 
 
@@ -123,8 +123,8 @@ def main():
         writer = None
 
 
-    tokenizer = LLaMATokenizer.from_pretrained(args.model_name_or_path)
-    model = LLaMAForCausalLM.from_pretrained(args.model_name_or_path) 
+    tokenizer = LlamaTokenizer.from_pretrained(args.model_name_or_path)
+    model = LlamaForCausalLM.from_pretrained(args.model_name_or_path) 
     model = model.to(device)
 
     optimizer = optim.AdamW(model.parameters(), lr=args.lr, betas=(args.beta1, args.beta2), eps=args.eps,)
