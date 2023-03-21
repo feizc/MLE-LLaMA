@@ -33,6 +33,11 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
 
 
 
+
+
+
+
+
 ## Reference 
 [1] https://github.com/facebookresearch/llama 
 
