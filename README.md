@@ -31,17 +31,17 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
 - [ ] Open source Checkpoints, gradio scripts and cases.
 
 <p align="center">
-     <img src="figures/case1.png" alt="case1" width = "750">
+     <img src="figures/case1.png" alt="case1" width = "1050">
      <br/>
 </p> 
 
 <p align="center">
-     <img src="figures/case2.png" alt="case2" width = "750">
+     <img src="figures/case2.png" alt="case2" width = "1050">
      <br/>
 </p> 
 
 <p align="center">
-     <img src="figures/case3.png" alt="case3" width = "750">
+     <img src="figures/case3.png" alt="case3" width = "1050">
      <br/>
 </p> 
 
