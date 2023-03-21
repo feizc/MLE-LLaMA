@@ -10,9 +10,11 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
 - [X] Token vocabulary support for multi-language. We found that llama tokenizer naturally support for Chinese. 
 - [X] Fine-tuning llama script.  
 
-  (1) ```train.py``` original script must be run on 80G A100 and more techniques should be employed. 
+  (1) download original ckpt from [huggingface](https://huggingface.co/decapoda-research/llama-7b-hf), and put them into file path ```ckpt```. 
+
+  (2) ```train.py``` original script must be run on 80G A100 and more techniques should be employed. 
   
-  (2) ```train_lora.py``` lora fine-tuning using [pert](https://github.com/huggingface/peft). 
+  (3) ```train_lora.py``` lora fine-tuning using [pert](https://github.com/huggingface/peft). 
   
   | Argument | Values |
   |------|------|
