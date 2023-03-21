@@ -25,10 +25,12 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
    | `speed` | 1.02s / it |
   
   
-- [ ] Fine-grained english-chinese dataset. We are collecting alignment dataset.
-- [ ] Instructing tuning. We use [chinese alpaca](https://github.com/carbonz0/alpaca-chinese-dataset) and [GuanacoDataset
+- [X] Fine-grained english-chinese alignment dataset. We colleced the pairs and can be download in [google drive](https://drive.google.com/file/d/1oQJQ6AOppzotlNy4a0zHAUHiXfS-GFYi/view?usp=share_link).
+- [X] Instructing tuning. We use [chinese alpaca](https://github.com/carbonz0/alpaca-chinese-dataset) and [GuanacoDataset
 ](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset) for instructing tunning. 
-- [ ] Checkpoints and cases
+- [ ] Open source Checkpoints, gradio scripts and cases.
+
+
 
 
 ## Reference 
