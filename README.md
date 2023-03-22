@@ -25,7 +25,8 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
    | `speed` | 1.02s / it |
   
   
-- [X] Fine-grained english-chinese alignment dataset. We colleced the high-quality English-Chinese pairs and can be download in [google drive](https://drive.google.com/file/d/1oQJQ6AOppzotlNy4a0zHAUHiXfS-GFYi/view?usp=share_link).
+- [X] Fine-grained english-chinese alignment dataset. We colleced the high-quality English-Chinese pairs and can be download in [google drive](https://drive.google.com/file/d/1oQJQ6AOppzotlNy4a0zHAUHiXfS-GFYi/view?usp=share_link). We also found that [BELLE] provide ckpts and chinese dataset, strongly recommended to refer it. 
+
 - [X] Instructing tuning. We use [chinese alpaca](https://github.com/carbonz0/alpaca-chinese-dataset) and [GuanacoDataset
 ](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset) for instructing tunning. 
 - [ ] Open source [checkpoints](https://huggingface.co/feizhengcong/MLE-LLaMA/blob/main/README.md), gradio scripts and cases. 
