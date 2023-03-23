@@ -31,7 +31,7 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
 
 - [X] Instructing tuning. We use [chinese alpaca](https://github.com/carbonz0/alpaca-chinese-dataset) and [GuanacoDataset
 ](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset) for instructing tunning. 
-- [ ] Open source [checkpoints](https://huggingface.co/feizhengcong/MLE-LLaMA/blob/main/README.md), gradio scripts and cases. 
+- [X] Open source [checkpoints](https://huggingface.co/feizhengcong/MLE-LLaMA/blob/main/README.md), gradio scripts and cases. 
      We found that LLaMA model tends to generate long sentences. 
 
 <p align="center">
