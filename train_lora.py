@@ -49,7 +49,7 @@ train_data = TextDataSet(DATA_PATH, tokenizer=tokenizer)
 trainer = transformers.Trainer(
     model=model,
     train_dataset=train_data,
-    # eval_dataset=None,
+    eval_dataset=train_data,
     args=transformers.TrainingArguments(
         per_device_train_batch_size=MICRO_BATCH_SIZE,
         gradient_accumulation_steps=GRADIENT_ACCUMULATION_STEPS,
