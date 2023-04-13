@@ -22,7 +22,7 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
    | `epochs` | 3 |
    | `cut length` | 256 |
    | `learning rate` | 2e-5 |
-   | `speed` | 1.02s / it |
+   | `speed` | 1.02s / it | 
   
   
 - [X] Fine-grained english-chinese alignment dataset. We colleced the high-quality English-Chinese pairs and can be download in [google drive](https://drive.google.com/file/d/1oQJQ6AOppzotlNy4a0zHAUHiXfS-GFYi/view?usp=share_link). 
@@ -35,17 +35,17 @@ This project aims to make LLaMa understand Chinese, and can generate fluency chi
      We found that LLaMA model tends to generate long sentences. 
 
 <p align="center">
-     <img src="figures/case1.png" alt="case1" width = "1050">
+     <img src="figures/case1.png" alt="case11" width = "1050">
      <br/>
 </p> 
 
 <p align="center">
-     <img src="figures/case2.png" alt="case2" width = "1050">
+     <img src="figures/case2.png" alt="case12" width = "1050">
      <br/>
 </p> 
 
 <p align="center">
-     <img src="figures/case3.png" alt="case3" width = "1050">
+     <img src="figures/case3.png" alt="case13" width = "1050">
      <br/>
 </p> 
 
